@@ -30,6 +30,9 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     po2mo: {
+      options: {
+        removeFiles: false,
+      },
       files: {
         src: 'test/fixtures/fr.po',
         dest: 'tmp/fr.mo',
